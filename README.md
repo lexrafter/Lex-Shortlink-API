@@ -3,7 +3,7 @@ FastAPI URL shortener with Postgres, Redis caching, and click analytics
 
 ## Local development
 Requirements: Python 3.11+
-```powershell
+powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
@@ -19,3 +19,13 @@ make up       # start api + postgres + redis
 make down     # stop containers
 make test     # run pytest
 make migrate  # run DB migrations (after Alembic is configured)
+
+## Configuration
+
+Copy `.env.example` to `.env` and adjust if needed.
+
+| Variable       | Purpose                          |
+|----------------|----------------------------------|
+| `DATABASE_URL` | Postgres connection string       |
+| `REDIS_URL`    | Redis connection string          |
+| `APP_ENV`      | Environment name (development)   |

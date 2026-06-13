@@ -11,4 +11,4 @@ test:
 
 migrate:
 	@echo "Alembic not set up yet — run P1-2.1 first, then replace this with:"
-	@echo "  docker compose exec api alembic upgrade head"
+	@echo "  docker compose exec api alembic upgrade head" 
